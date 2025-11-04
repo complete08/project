@@ -1,0 +1,394 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+#container {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "sidebar"
+    "main"
+    "additional"
+    "footer"
+    ;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    gap: 10px;
+ }
+#header {
+    grid-area: header;
+    color:black;
+    text-align: center;
+    background-color: brown  
+}
+#header p a{
+   text-decoration: none;
+   margin-right: 20px;
+   color: black;
+}
+#sidebar {
+   grid-area: sidebar;
+   color: white;
+   background-color: brown;
+   padding: 10px;
+}
+#main {
+   grid-area: main;
+   color: black;
+   background-color: burlywood;
+   padding: 10px;
+}
+#gallery {
+   display: flex;
+   flex-wrap: wrap;
+   text-align: center;
+}
+#gallery-1 {
+   width: 33%;
+   height: 100px;
+   box-shadow: 5px 4px 5px rgba(14, 0, 0, 0.488);
+   border-radius:15px ;
+}
+#gallery-2 {
+   width:33%;
+   height: 100px;
+   box-shadow: 5px 4px 5px rgba(14, 0, 0, 0.488);
+   border-radius:15px ;
+}
+#gallery-3 {
+   width: 33%;
+   height: 100px;
+   box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.488);
+   border-radius:15px ;
+}
+#gallery-4 {
+   width: 33%;
+   height: 100px;
+   box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.488);
+   border-radius:15px ;
+}
+#gallery-5 {
+   width: 33%;
+   height: 100px;
+   box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.488);
+   border-radius:15px ;
+}
+#gallery-6 {
+   width: 33%;
+   height: 100px;
+   box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.488);
+   border-radius:15px ;
+}
+#additional {
+   grid-area: additional;
+   color: white;
+   background-color: brown;
+   padding: 10px;
+}
+#footer {
+   grid-area: footer;
+   color: black;
+   background: lightcoral;
+   text-align: center;
+   padding: 10px;
+}
+@media screen and (min-width :320px) {
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+#container {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "sidebar"
+    "main"
+    "additional"
+    "footer"
+    ;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    gap: 10px;
+ }
+#header {
+    grid-area: header;
+    color:black;
+    text-align: center;
+    background-color: antiquewhite; 
+}
+#header p a{
+   text-decoration: none;
+   margin-right: 20px;
+   color: black;
+}
+#sidebar {
+   grid-area: sidebar;
+   color: white;
+   background-color:gray;
+   padding: 10px;
+}
+#main {
+   grid-area: main;
+   color: black;
+   background-color: burlywood;
+   padding: 10px;
+}
+#gallery {
+   display: flex;
+   flex-wrap: wrap;
+   text-align: center;
+   gap: 20px;
+}
+#gallery-1 {
+   width: 100%;
+   height: 100px;
+   box-shadow: 5px 4px 5px rgba(14, 0, 0, 0.488);
+   border-radius:15px ;
+}
+#gallery-2 {
+   width:100%;
+   height: 100px;
+   box-shadow: 5px 4px 5px rgba(14, 0, 0, 0.488);
+   border-radius:15px ;
+}
+#gallery-3 {
+   width: 100%;
+   height: 100px;
+   box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.488);
+   border-radius:15px ;
+}
+#gallery-4 {
+   width: 100%;
+   height: 100px;
+   box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.488);
+   border-radius:15px ;
+}
+#gallery-5 {
+   width: 100%;
+   height: 100px;
+   box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.488);
+   border-radius:15px ;
+}
+#gallery-6 {
+   width: 100%;
+   height: 100px;
+   box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.488);
+   border-radius:15px ;
+}
+#additional {
+   grid-area: additional;
+   color: white;
+   background-color:gray;
+   padding: 10px;
+}
+#footer {
+   grid-area: footer;
+   color: black;
+   background: lightcoral;
+   text-align: center;
+   padding: 10px;
+}
+ 
+}
+@media screen and ( min-width :768px) {
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+#container {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "sidebar  main main"
+    "additional additional additional"
+    "footer footer footer"
+    ;
+    grid-template-columns: 200px 1fr 250px;
+    grid-template-rows: 60px 1fr 60px;
+    height: 100vh;
+    gap: 10px;
+ }
+#header {
+    grid-area: header;
+    color:white;
+    text-align: center;
+    background-color: purple;  
+}
+#header p a{
+   text-decoration: none;
+   margin-right: 20px;
+   color: black;
+}
+#sidebar {
+   grid-area: sidebar;
+   color: black;
+   background-color: silver;
+   padding: 10px;
+}
+#main {
+   grid-area: main;
+   color: black;
+   background-color: burlywood;
+   padding: 10px;
+}
+#gallery {
+   display: flex;
+   flex-wrap: wrap;
+   text-align: center;
+   justify-content: center;
+}
+#gallery-1 {
+   width: 30%;
+   height: 100px;
+   box-shadow: 5px 4px 5px rgba(14, 0, 0, 0.488);
+   border-radius:15px ;
+}
+#gallery-2 {
+   width:30%;
+   height: 100px;
+   box-shadow: 5px 4px 5px rgba(14, 0, 0, 0.488);
+   border-radius:15px ;
+}
+#gallery-3 {
+   width: 30%;
+   height: 100px;
+   box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.488);
+   border-radius:15px ;
+}
+#gallery-4 {
+   width: 30%;
+   height: 100px;
+   box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.488);
+   border-radius:15px ;
+}
+#gallery-5 {
+   width: 30%;
+   height: 100px;
+   box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.488);
+   border-radius:15px ;
+}
+#gallery-6 {
+   width: 30%;
+   height: 100px;
+   box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.488);
+   border-radius:15px ;
+}
+#additional {
+   grid-area: additional;
+   color:black;
+   background-color: silver;
+   padding: 10px;
+}
+#footer {
+   grid-area: footer;
+   color: white;
+   background: purple;
+   text-align: center;
+   padding: 10px;
+}  
+}
+@media screen and (min-width :1024px) {
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+#container {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "sidebar main additional"
+    "footer footer footer"
+    ;
+    grid-template-columns: 200px 1fr 250px;
+    grid-template-rows: 60px 1fr 60px;
+    height: 100vh;
+    gap: 10px;
+ }
+#header {
+    grid-area: header;
+    color:black;
+    text-align: center;
+    background-color: brown  
+}
+#header p a{
+   text-decoration: none;
+   margin-right: 20px;
+   color: black;
+}
+#sidebar {
+   grid-area: sidebar;
+   color: white;
+   background-color: brown;
+   padding: 10px;
+}
+#main {
+   grid-area: main;
+   color: black;
+   background-color: burlywood;
+   padding: 10px;
+}
+#gallery {
+   display: flex;
+   flex-wrap: wrap;
+   text-align: center;
+   justify-content: center;
+}
+#gallery-1 {
+   width: 30%;
+   height: 100px;
+   box-shadow: 5px 4px 5px rgba(14, 0, 0, 0.488);
+   border-radius:15px ;
+}
+#gallery-2 {
+   width:30%;
+   height: 100px;
+   box-shadow: 5px 4px 5px rgba(14, 0, 0, 0.488);
+   border-radius:15px ;
+}
+#gallery-3 {
+   width: 30%;
+   height: 100px;
+   box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.488);
+   border-radius:15px ;
+}
+#gallery-4 {
+   width: 30%;
+   height: 100px;
+   box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.488);
+   border-radius:15px ;
+}
+#gallery-5 {
+   width: 30%;
+   height: 100px;
+   box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.488);
+   border-radius:15px ;
+}
+#gallery-6 {
+   width: 30%;
+   height: 100px;
+   box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.488);
+   border-radius:15px ;
+}
+#additional {
+   grid-area: additional;
+   color: white;
+   background-color: brown;
+   padding: 10px;
+}
+#footer {
+   grid-area: footer;
+   color: black;
+   background: lightcoral;
+   text-align: center;
+   padding: 10px;
+}
+ 
+}
